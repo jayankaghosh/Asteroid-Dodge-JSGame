@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="src/style/css/style.min.css">
+	<title>Game</title>
+	<script type="text/javascript" src="src/js/script.min.js"></script>
+</head>
+<body>
+<span class="header">ASTEROID DODGE</span>
+<div style="margin:0;position:absolute;z-index:1000;width:100%;height:100%;background-color:#0a0a0a;" id="menu">
+<div id="mmenu">
+<h2>P: Pause | M: Mute | Spacebar: Shoot | Mouse: Spaceship movement</h2>
+<span onclick="start()" style="font-size:2em;font-weight:bold;cursor:pointer;padding:1%;background-color:#8888ff;">START GAME</span><br><br><br><hr><br>
+<span style="font-size:3em;font-weight:bold;" id="scorecard"><u>HIGH SCORE - </u><span id="info">0</span><span id="pscore"></span> </span>
+</div>
+</div>
+<span id="score">SCORE : <span id="no">0</span></span>
+<span id="ammo-info">
+
+<span id="health-bar"></span>
+<br>
+<span id="total-bullets"></span>
+<br>
+<span id="invincible-counter">&nbsp;</span>
+
+</span>
+<span id="cursor"><img id="player-sprite" src="src/style/img/player.png" style="width:100%;height:100%">
+</span>
+
+
+<div id="pause-info"><span>PAUSED</span></div>
+
+<span class="audio-toggle"><span id="audio-toggle" onclick="audioToggle()">Audio: on</span>(M)</span>
+
+<audio id="bg">
+	<source src="src/style/audio/bg-audio.mp3" type="audio/mp3">
+</audio>
+
+<audio id="over">
+	<source src="src/style/audio/over.wav" type="audio/wav">
+</audio>
+
+<audio id="point">
+	<source src="src/style/audio/point.wav" type="audio/wav">
+</audio>
+
+<audio id="powerup">
+	<source src="src/style/audio/powerup.wav" type="audio/wav">
+</audio>
+
+<audio id="explode">
+	<source src="src/style/audio/explode.mp3" type="audio/mp3">
+</audio>
+
+<audio id="fire">
+	<source src="src/style/audio/space-bullet.wav" type="audio/wav">
+</audio>
+
+<audio id="asteroid-explode">
+	<source src="src/style/audio/asteroid-explode.wav" type="audio/wav">
+</audio>
+
+<audio id="bump">
+	<source src="src/style/audio/bump.wav" type="audio/wav">
+</audio>
+
+<audio id="pause">
+	<source src="src/style/audio/pause.wav" type="audio/wav">
+</audio>
+
+</body>
+</html>
